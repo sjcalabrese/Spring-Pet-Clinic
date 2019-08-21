@@ -8,9 +8,14 @@ public class IndexController {
 
     //any of these will route to index.html
     @RequestMapping({"", "/", "index", "index.html"})
-    public String index(){
+    public String index() {
 
         //wires up the controller with thymeleaf. (finds the index.html file)
         return "index";
+    }
+
+    @RequestMapping("/oups")
+    public String oupsHandler() {
+        return "notimplemented";
     }
 }
