@@ -1,14 +1,12 @@
 package guru.springframework.springpetclinic.bootstrap;
 
 import guru.springframework.springpetclinic.model.*;
-import guru.springframework.springpetclinic.services.OwnerService;
-import guru.springframework.springpetclinic.services.PetTypeService;
-import guru.springframework.springpetclinic.services.SpecialtyService;
-import guru.springframework.springpetclinic.services.VetService;
+import guru.springframework.springpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 //component makes it a string bean and gets registered to spring context.
 @Component
@@ -18,15 +16,17 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
     //@Autowired No longer required in spring 5 for constructor based autowiring
     public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
-                      SpecialtyService specialtyService) {
+                      SpecialtyService specialtyService, VisitService visitService) {
 
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -90,6 +90,13 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(fionasCat);
 
         ownerService.save(owner2);
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(fionasCat);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy Kitty");
+
+        visitService.save(catVisit);
 
         System.out.println("loaded Owners...");
 
