@@ -140,11 +140,11 @@
                 <version>2.22.0</version>
                 <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-surefire-provider -->
                 <dependencies>
-                <!--<dependency>
+                <dependency>
                     <groupId>org.junit.platform</groupId>
                     <artifactId>junit-platform-surefire-provider</artifactId>
                     <version>${junit-platform.version}</version>
-                </dependency>-->
+                </dependency>
                 </dependencies>
             </plugin>
         </plugins>
