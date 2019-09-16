@@ -1,1 +1,4 @@
+/home/sal/IdeaProjects/Spring-Pet-Clinic/pet-clinic-web/src/test/java/guru/springframework/springpetclinic/controllers/OwnerControllerTest.java
+/home/sal/IdeaProjects/Spring-Pet-Clinic/pet-clinic-web/src/test/java/guru/springframework/springpetclinic/services/springdatajpa/OwnerSDJpaServiceTest.java
 /home/sal/IdeaProjects/Spring-Pet-Clinic/pet-clinic-web/src/test/java/guru/springframework/springpetclinic/SpringPetClinicApplicationTests.java
+/home/sal/IdeaProjects/Spring-Pet-Clinic/pet-clinic-web/src/test/java/guru/springframework/springpetclinic/services/map/OwnerMapServiceTest.java
