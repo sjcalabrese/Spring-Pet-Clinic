@@ -1,0 +1,4 @@
+guru\springframework\springpetclinic\SpringPetClinicApplicationTests.class
+guru\springframework\springpetclinic\controllers\OwnerControllerTest.class
+guru\springframework\springpetclinic\services\map\OwnerMapServiceTest.class
+guru\springframework\springpetclinic\services\springdatajpa\OwnerSDJpaServiceTest.class

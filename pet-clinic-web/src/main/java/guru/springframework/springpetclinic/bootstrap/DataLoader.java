@@ -6,7 +6,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 //component makes it a string bean and gets registered to spring context.
 @Component
@@ -18,7 +17,7 @@ public class DataLoader implements CommandLineRunner {
     private final SpecialtyService specialtyService;
     private final VisitService visitService;
 
-    //@Autowired No longer required in spring 5 for constructor based autowiring
+    //@Autowired //No longer required in spring 5 for constructor based autowiring
     public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
                       SpecialtyService specialtyService, VisitService visitService) {
 
