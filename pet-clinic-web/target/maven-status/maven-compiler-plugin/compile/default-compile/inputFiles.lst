@@ -4,3 +4,5 @@ D:\Spring Framework\Spring-Pet-Clinic\pet-clinic-web\src\main\java\guru\springfr
 D:\Spring Framework\Spring-Pet-Clinic\pet-clinic-web\src\main\java\guru\springframework\springpetclinic\controllers\OwnerController.java
 D:\Spring Framework\Spring-Pet-Clinic\pet-clinic-web\src\main\java\guru\springframework\springpetclinic\SpringPetClinicApplication.java
 D:\Spring Framework\Spring-Pet-Clinic\pet-clinic-web\src\main\java\guru\springframework\springpetclinic\controllers\IndexController.java
+D:\Spring Framework\Spring-Pet-Clinic\pet-clinic-web\src\main\java\guru\springframework\springpetclinic\formatters\PetTypeFormatter.java
+D:\Spring Framework\Spring-Pet-Clinic\pet-clinic-web\src\main\java\guru\springframework\springpetclinic\controllers\VisitController.java

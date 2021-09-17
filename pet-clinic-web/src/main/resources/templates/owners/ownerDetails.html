@@ -56,15 +56,15 @@
                 </tr>
                 </thead>
                 <tr th:each="visit : ${pet.visits}">
-                    <td th:text="${#temporal.format(visit.date, 'yyyy-MM-dd')}"></td>
+                    <td th:text="${#temporals.format(visit.date, 'yyyy-MM-dd')}"></td>
                     <td th:text="${visit?.description}"></td>
                 </tr>
                 <tr>
                     <td><a
-                            th:href="@{{ownerId}/pets/{petsId}/edit(owner.id=${owner.id},petId=${pet.id})}">Edit
+                            th:href="@{{ownerId}/pets/{petId}/edit(owner.id=${owner.id},petId=${pet.id})}">Edit
                         Pet</a></td>
                     <td><a
-                            th:href="@{{ownerId}/pets/{petsId}/visits/new(ownerId=${owner.id},petId=${pet.id})}">Add
+                            th:href="@{{ownerId}/pets/{petId}/visits/new(ownerId=${owner.id},petId=${pet.id})}">Add
                         Visit</a></td>
                 </tr>
             </table>
