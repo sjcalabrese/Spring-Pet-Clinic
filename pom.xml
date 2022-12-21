@@ -52,6 +52,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.5.4</version>
             </plugin>
+            <!-- setting goals overided the default "deploy" goal for maven
+            when the job is ran -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>

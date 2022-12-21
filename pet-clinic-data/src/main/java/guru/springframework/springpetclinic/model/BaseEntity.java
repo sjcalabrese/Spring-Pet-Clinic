@@ -18,6 +18,7 @@ import java.io.Serializable;
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
+    //Using Long instead of primitive long because Long can contain a null value
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
