@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDate;
 
 //component makes it a string bean and gets registered to spring context.
+// since it implements command line runner after beans are created it will execute the run method
 @Component
 public class DataLoader implements CommandLineRunner {
 

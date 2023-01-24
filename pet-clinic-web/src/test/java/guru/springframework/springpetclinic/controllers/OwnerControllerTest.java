@@ -99,7 +99,7 @@ class OwnerControllerTest {
     void initCreationForm() throws Exception {
         mockMvc.perform(get("/owners/new"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("owners/createOrUpdateOwnerForm"))
+                .andExpect(view().name("owners/createOrUpdateOwner"))
                 .andExpect(model().attributeExists("owner"));
 
         verifyZeroInteractions(ownerService);
@@ -123,7 +123,7 @@ class OwnerControllerTest {
 
         mockMvc.perform(get("/owners/1/edit"))
                 .andExpect(status().isOk())
-                .andExpect(view().name("owners/createOrUpdateOwnerForm"))
+                .andExpect(view().name("owners/createOrUpdateOwner"))
                 .andExpect(model().attributeExists("owner"));
 
         verifyZeroInteractions(ownerService);
