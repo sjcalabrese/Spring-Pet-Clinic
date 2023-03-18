@@ -21,6 +21,8 @@ public class Person extends BaseEntity {
         this.lastName = lastName;
     }
 
+    //@column is JPA annotation which indicates what you want the column name to be in the table
+    //If not used hibername will create the name itself using snake case
     @Column(name= "first_name")
     private String firstName;
     @Column(name = "last_name")
